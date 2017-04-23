@@ -10,13 +10,13 @@ var mongoose = require('mongoose'),
  * Post Schema
  */
 var PostSchema = new Schema({
-  title: {
+  title_post: {
     type: String,
     default: '',
     required: 'Please fill Post title',
     trim: true
   },
-  body: {
+  body_post: {
     type: String,
     default: '',
     required: 'Please fill Post body',
@@ -30,7 +30,7 @@ var PostSchema = new Schema({
   category: {
     type: String,
     default: '',
-    required: 'Please fill Post name',
+    required: 'Please fill Post category',
     trim: true
   },
   created: {
